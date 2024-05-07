@@ -24,8 +24,5 @@ export class AppComponent {
 
   }
 
-  // passToPositionPage():void{
-  //  localStorage.getItem("name")!=null?this.router.navigate(["/position-page"]):this.router.navigate(["/login"])
-
-  // }
+ 
 }
