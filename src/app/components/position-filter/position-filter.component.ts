@@ -8,7 +8,6 @@ import { Fields } from 'src/app/models/fields';
 })
 export class PositionFilterComponent {
 
-  // area: string = ''
   field: Fields|null = null
   fields: Fields []= [Fields.Angular, Fields.Java,Fields.Node,Fields.React];
   area:string=""

@@ -26,20 +26,15 @@ export class PositionPageComponent implements OnInit {
   }
   positionToView:Position[] =this.positionSvc.PositionList
   filterDetails:any = null
-  //ארוע שמוזנק מקומפוננטת הפילטור בעת ליצה על סנן
-  //הפרמטר המתקבל מכיל את הערכים שהוזנו בסינון
   filterChange($event:any){
-    //שמירת נתוני הסינון, לשימוש מאוחר יותר
     console.log("filterchange ");
     
     console.log($event);
     
     this.filterDetails = $event
-    //קריאה לפונקציה שמעדכנת את הרשימה לתצוגה לפי נתוני הפילטר
   this.applyFilter()
   }
   applyFilter(){
-    //שימוש בפונקציית הפילטור הראשית שנמצאת בסרוויס כדי לפלטר לפי המחירים שהוזנו בשורת הסינון
     this.positionToView = this.positionSvc.filterPosition(this.filterDetails.area,this.filterDetails.field)
     console.log(this.filterDetails.field);
     

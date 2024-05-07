@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PositionFilterComponent } from './components/position-filter/position-filter.component';
 import { PositionPageComponent } from './components/position-page/position-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ShowDetailsComponent } from './show-details/show-details.component';
+import { ShowDetailsComponent } from './components/show-details/show-details.component';
 import { EnumToStringPipe } from './pipes/enumToString.pipe';
 import { PositionsListComponent } from './components/positions-list/positions-list.component';
 

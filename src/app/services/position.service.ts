@@ -41,22 +41,7 @@ export class PositionsService {
   getRenredPositions(): Observable<Position> {
     let o: Observable<Position> = new Observable<Position>(o => {})
 
-     /* try {
-        setTimeout(() => {
-          o.next(this.costumeList[0])
-        }, 2000)
-        setTimeout(() => {
-          o.next(this.costumeList[1])
-        }, 1000);
-        setTimeout(() => {
-          o.next(this.costumeList[2])
-          o.complete()
-        }, 4000);
-      }
-      catch (ex) {
-        o.error(ex)
-      }
-    })*/
+    
     return o
   }
 }

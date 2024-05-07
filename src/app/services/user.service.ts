@@ -46,22 +46,7 @@ export class UserService {
   getRenredCUser(): Observable<User> {
     let o: Observable<User> = new Observable<User>(o => {})
 
-     /* try {
-        setTimeout(() => {
-          o.next(this.costumeList[0])
-        }, 2000)
-        setTimeout(() => {
-          o.next(this.costumeList[1])
-        }, 1000);
-        setTimeout(() => {
-          o.next(this.costumeList[2])
-          o.complete()
-        }, 4000);
-      }
-      catch (ex) {
-        o.error(ex)
-      }
-    })*/
+     
     return o
 
   }

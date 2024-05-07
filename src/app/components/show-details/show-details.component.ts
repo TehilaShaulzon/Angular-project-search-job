@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PositionsService } from '../services/position.service';
-import { Position } from '../models/position';
+import { PositionsService } from '../../services/position.service';
+import { Position } from '../../models/position';
 
 @Component({
   selector: 'app-show-details',
