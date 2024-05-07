@@ -1,27 +1,62 @@
-# SearchJob
+בס"ד
+# Job Search Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+## Angular Course Summary Exercise
 
-## Development server
+The Job Search website is a project developed as part of an Angular course summary exercise. The website provides a user interface for searching job listings and managing resumes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Instructions and Project Description:
 
-## Code scaffolding
+1. **Server-Side Project**:
+   - Contains actions to:
+     - Retrieve a list of job listings.
+     - Receive a username and password and return an object with the corresponding user data. If any of the data is incorrect, null is returned.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Client-Side Angular Project**:
+   - Defines data structures such as:
+     - Job: Field, name, hours scope, area, requirements, remote work availability.
+     - User: Identifier, username, password, job search field.
 
-## Build
+3. **Components**:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   3.1. **Main Component**:
+      - Contains the site's header and footer.
+      - Displays:
+        - The username connected to the system.
+        - The job field the user is searching for, clicking on it navigates to a filtered job list.
+        - The number of resumes sent through the system.
+        - The site's logo, clicking on it navigates to the login page.
+      - Contact details with the site administrator are displayed at the bottom of the page.
+        
+   3.2. **Login Component**:
+      - Allows the user to log into the system by entering a username and password.
+      - The system authenticates the details and stores them in localStorage.
+      - Error messages are displayed if the details are invalid or if the password is too short or contains spaces.
+      - After successful login, the user is redirected to the job listings page.
+        
+   3.3. **Job Listings Component**:
+      - Displays the list of job listings using job components.
+      - Allows filtering by field and area.
+      - Clicking "Show Details" displays the job details.
+      - Clicking "Send Resume" forwards the resume to the company and displays the job in the list of jobs where resumes have been sent.
 
-## Running unit tests
+### Models:
+- **Job**:
+  - Job field
+  - Job name
+  - Hours scope
+  - Area
+  - Requirements
+  - Remote work availability
+- **User**:
+  - Identifier
+  - Username
+  - Password
+  - Job search field
+### Local Setup:
+Install the project on your computer.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the local server by executing the command: ng serve.
 
-## Running end-to-end tests
+Open the website in a browser using the address: http://localhost:4200/.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
