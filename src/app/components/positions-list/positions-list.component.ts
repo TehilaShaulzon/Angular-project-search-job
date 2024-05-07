@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Position } from 'src/app/models/position';
 
 @Component({
   selector: 'app-positions-list',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./positions-list.component.scss']
 })
 export class PositionsListComponent implements OnInit {
+  @Input() positionList:Position[] =[]
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
