@@ -1,28 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
-import { PositionComponent } from './position/position.component';
-import { PositionListComponent } from './position-list/position-list.component';
-import { PositionPageComponent } from './position-page/position-page.component';
-import { PositionFilterComponent } from './position-filter/position-filter.component';
+import { PositionComponent } from './components/position/position.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PositionFilterComponent } from './components/position-filter/position-filter.component';
+import { PositionPageComponent } from './components/position-page/position-page.component';
+import { HttpClientModule } from '@angular/common/http';
 import { ShowDetailsComponent } from './show-details/show-details.component';
+import { EnumToStringPipe } from './pipes/enumToString.pipe';
+import { PositionsListComponent } from './components/positions-list/positions-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     PositionComponent,
-    PositionListComponent,
-    PositionPageComponent,
     PositionFilterComponent,
-    ShowDetailsComponent
+    PositionPageComponent,
+    ShowDetailsComponent,
+    EnumToStringPipe,
+    PositionsListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

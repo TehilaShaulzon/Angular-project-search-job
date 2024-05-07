@@ -1,1 +1,11 @@
-<p>login works!</p>
+<form [formGroup]="f!">
+    <div>
+        <label>שם משתמש</label>
+        <input type="text" formControlName="name" [(ngModel)]="currentUser.name">
+    </div>
+    <div><label>סיסמא</label>
+        <input type="password" formControlName="password" [(ngModel)]="currentUser.password">
+    </div>
+    <button (click)="save()">התחברות</button>
+    
+</form>

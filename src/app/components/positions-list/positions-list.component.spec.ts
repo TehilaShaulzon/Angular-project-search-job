@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PositionListComponent } from './position-list.component';
+import { PositionsListComponent } from './positions-list.component';
 
-describe('PositionListComponent', () => {
-  let component: PositionListComponent;
-  let fixture: ComponentFixture<PositionListComponent>;
+describe('PositionsListComponent', () => {
+  let component: PositionsListComponent;
+  let fixture: ComponentFixture<PositionsListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PositionListComponent ]
+      declarations: [ PositionsListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PositionListComponent);
+    fixture = TestBed.createComponent(PositionsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
